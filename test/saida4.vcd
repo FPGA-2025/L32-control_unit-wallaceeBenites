@@ -1,0 +1,272 @@
+$date
+	Wed Jul 23 03:10:50 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$var wire 1 ! reg_write $end
+$var wire 1 " pc_write_cond $end
+$var wire 1 # pc_write $end
+$var wire 1 $ pc_source $end
+$var wire 1 % memory_write $end
+$var wire 1 & memory_to_reg $end
+$var wire 1 ' memory_read $end
+$var wire 1 ( lorD $end
+$var wire 1 ) is_immediate $end
+$var wire 1 * ir_write $end
+$var wire 2 + aluop [1:0] $end
+$var wire 2 , alu_src_b [1:0] $end
+$var wire 2 - alu_src_a [1:0] $end
+$var parameter 7 . AUIPCI $end
+$var parameter 7 / BRANCHI $end
+$var parameter 7 0 CSR $end
+$var parameter 7 1 ITYPE $end
+$var parameter 7 2 JALI $end
+$var parameter 7 3 JALRI $end
+$var parameter 7 4 LUII $end
+$var parameter 7 5 LW $end
+$var parameter 7 6 RTYPE $end
+$var parameter 7 7 SW $end
+$var reg 1 8 clk $end
+$var reg 2 9 expected_alu_src_a [1:0] $end
+$var reg 2 : expected_alu_src_b [1:0] $end
+$var reg 2 ; expected_aluop [1:0] $end
+$var reg 1 < expected_ir_write $end
+$var reg 1 = expected_is_immediate $end
+$var reg 1 > expected_lorD $end
+$var reg 1 ? expected_memory_read $end
+$var reg 1 @ expected_memory_to_reg $end
+$var reg 1 A expected_memory_write $end
+$var reg 1 B expected_pc_source $end
+$var reg 1 C expected_pc_write $end
+$var reg 1 D expected_pc_write_cond $end
+$var reg 1 E expected_reg_write $end
+$var reg 7 F instruction_opcode [6:0] $end
+$var reg 1 G rst_n $end
+$var integer 32 H i [31:0] $end
+$var integer 32 I j [31:0] $end
+$scope module c_un $end
+$var wire 1 8 clk $end
+$var wire 7 J instruction_opcode [6:0] $end
+$var wire 1 G rst_n $end
+$var parameter 4 K ALUWB $end
+$var parameter 4 L AUIPC $end
+$var parameter 7 M AUIPCI $end
+$var parameter 4 N BRANCH $end
+$var parameter 7 O BRANCHI $end
+$var parameter 4 P CSR $end
+$var parameter 7 Q CSR_OP $end
+$var parameter 4 R DECODE $end
+$var parameter 4 S EXECUTEI $end
+$var parameter 4 T EXECUTER $end
+$var parameter 4 U FETCH $end
+$var parameter 7 V ITYPE $end
+$var parameter 4 W JAL $end
+$var parameter 7 X JALI $end
+$var parameter 4 Y JALR $end
+$var parameter 7 Z JALRI $end
+$var parameter 4 [ JALR_PC $end
+$var parameter 4 \ LUI $end
+$var parameter 7 ] LUII $end
+$var parameter 7 ^ LW $end
+$var parameter 4 _ MEMADR $end
+$var parameter 4 ` MEMREAD $end
+$var parameter 4 a MEMWB $end
+$var parameter 4 b MEMWRITE $end
+$var parameter 7 c RTYPE $end
+$var parameter 7 d SW $end
+$var reg 2 e alu_src_a [1:0] $end
+$var reg 2 f alu_src_b [1:0] $end
+$var reg 2 g aluop [1:0] $end
+$var reg 1 * ir_write $end
+$var reg 1 ) is_immediate $end
+$var reg 1 ( lorD $end
+$var reg 1 ' memory_read $end
+$var reg 1 & memory_to_reg $end
+$var reg 1 % memory_write $end
+$var reg 1 $ pc_source $end
+$var reg 1 # pc_write $end
+$var reg 1 " pc_write_cond $end
+$var reg 1 ! reg_write $end
+$var reg 4 h state_cs [3:0] $end
+$var reg 4 i state_ns [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100011 d
+b110011 c
+b101 b
+b100 a
+b11 `
+b10 _
+b11 ^
+b110111 ]
+b1101 \
+b1110 [
+b1100111 Z
+b1011 Y
+b1101111 X
+b1001 W
+b10011 V
+b0 U
+b110 T
+b1000 S
+b1 R
+b1110011 Q
+b1111 P
+b1100011 O
+b1010 N
+b10111 M
+b1100 L
+b111 K
+b100011 7
+b110011 6
+b11 5
+b110111 4
+b1100111 3
+b1101111 2
+b10011 1
+b1110011 0
+b1100011 /
+b10111 .
+$end
+#0
+$dumpvars
+b1 i
+b0 h
+b0 g
+b1 f
+b0 e
+b1101111 J
+b100 I
+bx H
+0G
+b1101111 F
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+bx ;
+bx :
+bx 9
+08
+b0 -
+b1 ,
+b0 +
+1*
+0)
+0(
+1'
+0&
+0%
+0$
+1#
+0"
+0!
+$end
+#1000
+18
+#2000
+08
+#3000
+18
+#4000
+08
+b1 :
+b0 9
+b0 ;
+0@
+0>
+0D
+0A
+0=
+1?
+0E
+0B
+1<
+1C
+b0 H
+1G
+#5000
+b1001 i
+b10 -
+b10 e
+b10 ,
+b10 f
+0'
+0*
+0#
+b1 h
+18
+#6000
+08
+b10 :
+b10 9
+0?
+0<
+0C
+b1 H
+#7000
+b0 i
+1!
+1$
+1#
+b1 ,
+b1 f
+b10 -
+b10 e
+b1001 h
+18
+#8000
+08
+b1 :
+1B
+1C
+b10 H
+#9000
+b1 i
+1'
+1*
+b1 ,
+b1 f
+b0 -
+b0 e
+0!
+0$
+1#
+b0 h
+18
+#10000
+08
+b0 :
+b0 9
+1E
+0B
+0C
+b11 H
+#11000
+b1001 i
+b10 -
+b10 e
+b10 ,
+b10 f
+0'
+0*
+0#
+b1 h
+18
+#12000
+08
+b100 H
